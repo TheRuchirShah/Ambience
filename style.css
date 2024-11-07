@@ -191,7 +191,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
-    width: 150px;
+    width: 180px;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -222,6 +222,13 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* Responsive adjustments */
+@media (max-width: 481px) {
+    .playlist-card {
+        width: 30%; /* Adjusts card width on smaller screens */
+    }
+}
+
+
 @media (max-width: 768px) {
     .playlist-card {
         width: 45%; /* Adjusts card width on smaller screens */
