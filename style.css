@@ -194,7 +194,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 180px;
     position: relative;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .playlist-card:hover {
