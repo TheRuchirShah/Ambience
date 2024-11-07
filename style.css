@@ -111,7 +111,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .sound-card.active, .playlist-card.active {
-    background-color: #FF5E1F;
+    background-color: #FF5E1F !important;
     border-color: #F5F5F5;
     box-shadow: rgba(255, 255, 255, 0.52) 0px 10px 100px -20px, rgba(0, 0, 0, 0.3) 0px -10px 60px -30px;
 
