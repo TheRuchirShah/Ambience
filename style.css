@@ -203,7 +203,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 .playlist-card:hover {
     transform: scale(1.05);
-    background: rgb(38,141,115);
 }
 
 .playlist-card img {
