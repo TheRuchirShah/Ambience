@@ -62,12 +62,12 @@ body {
 
 .sub_heading h2 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
@@ -129,6 +129,9 @@ input[type="range"]::-webkit-slider-thumb {
     .sound-card {
         max-width: 110px;
         margin: 15px;
+    }
+    .sound-card h3 {
+        font-size: 16px;
     }
 
     h1 {
