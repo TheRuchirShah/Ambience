@@ -179,7 +179,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .playlist-flex {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     flex-direction: row;
