@@ -201,7 +201,7 @@ input[type="range"]::-webkit-slider-thumb {
     transition: all 0.4s ease;
 }
 
-.playlist-card:hover {
+.playlist-card #lofi-beats:hover {
     transform: scale(1.05);
     background: rgb(38,141,115);
     background: linear-gradient(135deg, rgba(38,141,115,1) 30%, rgba(16,80,63,1) 80%);
