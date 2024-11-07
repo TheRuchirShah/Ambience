@@ -1,0 +1,127 @@
+/* General Styling */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    font-family: Open Sans, sans-serif;
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+.heading {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sound-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Adjust to fit on smaller screens */
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+    border: 2px solid transparent;
+}
+
+.sound-card h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #555;
+    height: 5px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sound-card.active {
+/*    background-color: #ff6347;  */
+/*    border-color: #f5f5f5; */
+
+    background-color: #FF5E1F;
+    border-color: #E4E1DF;
+    box-shadow: rgba(255, 255, 255, 0.52) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
+
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .sound-card {
+        max-width: 250px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sound-card {
+        max-width: 200px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
