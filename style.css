@@ -227,7 +227,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /* Different gradient backgrounds for each playlist card */
-.playlist-card[data-sound="lofi"]:hover {
+.playlist-card[data-sound="lofi"] {
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
