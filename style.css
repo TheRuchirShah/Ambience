@@ -227,8 +227,9 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /* Different gradient backgrounds for each playlist card */
-/* .playlist-card[data-sound="lofi"] {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+.playlist-card[data-sound="lofi"]:hover {
+    background: rgb(38,141,115);
+    background: linear-gradient(135deg, rgba(38,141,115,1) 30%, rgba(16,80,63,1) 80%);
 }
 
 .playlist-card[data-sound="jazz"] {
