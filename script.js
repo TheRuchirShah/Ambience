@@ -48,3 +48,38 @@ document.querySelectorAll('.sound-card').forEach(card => {
         e.stopPropagation(); // Prevent the card's click event from firing
     });
 });
+
+
+//
+
+// Define the sounds with URLs for playlists
+const sounds = {
+    lofi: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Drums.mp3'),
+    jazz: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Train.mp3'),
+    // Add more as needed
+};
+
+// Set all sounds to loop
+Object.keys(sounds).forEach(soundName => {
+    sounds[soundName].loop = true;
+    sounds[soundName].volume = 0.5; // Initial volume
+});
+
+// Function to play/pause a playlist item
+function togglePlaylistSound(cardElement, soundName) {
+    const sound = sounds[soundName];
+    if (sound.paused) {
+        sound.play();
+        cardElement.classList.add('active');
+    } else {
+        sound.pause();
+        cardElement.classList.remove('active');
+    }
+}
+
+// Event listener for each playlist card
+document.querySelectorAll('.playlist-card').forEach(card => {
+    const soundName = card.dataset.sound;
+    card.addEventListener('click', () => togglePlaylistSound(card, soundName));
+});
+
