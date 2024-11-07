@@ -99,6 +99,9 @@ Object.keys(sounds).forEach(soundName => {
     sounds[soundName].volume = 0.5; // Default to 50% volume
 });
 
+// Variable to store the currently playing playlist
+let currentlyPlayingPlaylist = null;
+
 // Function to play/pause the sound and toggle the active class
 function toggleSound(cardElement, soundName) {
     const sound = sounds[soundName];
@@ -110,6 +113,28 @@ function toggleSound(cardElement, soundName) {
     } else {
         sound.pause();
         cardElement.classList.remove('active');
+    }
+}
+
+// Function to play/pause a playlist sound and ensure only one playlist plays at a time
+function togglePlaylistSound(cardElement, soundName) {
+    const sound = sounds[soundName];
+
+    // If another playlist is playing, pause it
+    if (currentlyPlayingPlaylist && currentlyPlayingPlaylist !== sound) {
+        currentlyPlayingPlaylist.pause();
+        document.querySelector('.playlist-card.active')?.classList.remove('active');
+    }
+
+    // Toggle the selected playlist's play/pause state
+    if (sound.paused) {
+        sound.play();
+        cardElement.classList.add('active');
+        currentlyPlayingPlaylist = sound;
+    } else {
+        sound.pause();
+        cardElement.classList.remove('active');
+        currentlyPlayingPlaylist = null;
     }
 }
 
@@ -143,6 +168,7 @@ document.querySelectorAll('.playlist-card').forEach(card => {
     const soundName = card.dataset.sound;
 
     // Toggle play/pause when clicking the playlist card
-    card.addEventListener('click', () => toggleSound(card, soundName));
+    card.addEventListener('click', () => togglePlaylistSound(card, soundName));
 });
+
 
