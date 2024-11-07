@@ -51,6 +51,15 @@ body {
     align-items: center;
 }
 
+.sub_heading {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: EB Garamond, serif;
+    font-weight: 400;
+}
+
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
