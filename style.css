@@ -232,19 +232,61 @@ input[type="range"]::-webkit-slider-thumb {
     background: linear-gradient(135deg, rgba(38,141,115,1) 30%, rgba(16,80,63,1) 80%);
 }
 
-.playlist-card[data-sound="jazz"] {
-    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+.playlist-card[data-sound="jazz"]:hover  {
+    background: rgb(224,178,76);
+    background: linear-gradient(135deg, rgba(224,178,76,1) 30%, rgba(166,67,19,1) 80%);
 }
 
-/* Add more custom gradients for each playlist as needed */
-/* .playlist-card[data-sound="meditation"] {
-    background: linear-gradient(135deg, #43cea2, #185a9d);
+.playlist-card[data-sound="meditation"]:hover  {
+background: rgb(4,147,145);
+background: linear-gradient(135deg, rgba(4,147,145,1) 30%, rgba(24,6,49,1) 80%);
 }
 
-.playlist-card[data-sound="bollywood"] {
-    background: linear-gradient(135deg, #fa709a, #fee140);
+.playlist-card[data-sound="dinner"]:hover  {
+background: rgb(222,83,43);
+background: linear-gradient(135deg, rgba(222,83,43,1) 30%, rgba(69,18,51,1) 80%);
 }
-*/
+
+.playlist-card[data-sound="longdrive"]:hover  {
+background: rgb(253,148,80);
+background: linear-gradient(135deg, rgba(253,148,80,1) 30%, rgba(99,7,26,1) 80%);
+}
+
+.playlist-card[data-sound="bollywood"]:hover  {
+background: rgb(234,97,49);
+background: linear-gradient(135deg, rgba(234,97,49,1) 30%, rgba(188,33,23,1) 80%);
+}
+
+.playlist-card[data-sound="cozysunday"]:hover  {
+background: rgb(204,114,41);
+background: linear-gradient(135deg, rgba(204,114,41,1) 30%, rgba(84,33,8,1) 80%);
+}
+
+.playlist-card[data-sound="productivity"]:hover  {
+background: rgb(39,129,192);
+background: linear-gradient(135deg, rgba(39,129,192,1) 30%, rgba(25,42,58,1) 80%);
+}
+
+.playlist-card[data-sound="gym"]:hover  {
+background: rgb(0,133,41);
+background: linear-gradient(135deg, rgba(0,133,41,1) 30%, rgba(4,9,16,1) 80%);
+}
+
+.playlist-card[data-sound="indianclassical"]:hover  {
+background: rgb(129,59,27);
+background: linear-gradient(135deg, rgba(129,59,27,1) 30%, rgba(36,15,6,1) 80%);
+}
+
+.playlist-card[data-sound="morning"]:hover  {
+background: rgb(253,160,47);
+background: linear-gradient(135deg, rgba(253,160,47,1) 30%, rgba(142,60,0,1) 80%);
+}
+
+.playlist-card[data-sound="rainymood"]:hover  {
+background: rgb(26,123,112);
+background: linear-gradient(135deg, rgba(26,123,112,1) 30%, rgba(4,38,34,1) 80%);
+}
+
 
 
 
