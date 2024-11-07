@@ -183,6 +183,9 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 15px;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
+    align-content: center;
+
 }
 
 .playlist-card {
