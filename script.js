@@ -84,48 +84,32 @@
 // });
 
 
-// Define the sounds and playlists with their URLs
+
+
+
+// Define the sounds with URLs for both individual sounds and playlists
 const sounds = {
     river: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Rain.mp3'),
-    waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3') // Placeholder for testing
-};
-
-const playlists = {
+    waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3'),
     lofi: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Drums.mp3'),
-    jazz: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Train.mp3'),
+    jazz: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Train.mp3')
     // Add more as needed
 };
 
-// Set each sound and playlist to loop and default volume
+// Initialize each sound's volume to 50% and set it to loop
 Object.keys(sounds).forEach(soundName => {
     sounds[soundName].loop = true;
-    sounds[soundName].volume = 0.5;
+    sounds[soundName].volume = 0.5; // Default to 50% volume
 });
 
-Object.keys(playlists).forEach(playlistName => {
-    playlists[playlistName].loop = true;
-    playlists[playlistName].volume = 0.5;
-});
+// Variable to store the currently playing playlist
+let currentlyPlayingPlaylist = null;
 
-// Function to stop all sounds in a group (either sounds or playlists)
-function stopAll(group) {
-    Object.keys(group).forEach(itemName => {
-        group[itemName].pause();
-        group[itemName].currentTime = 0; // Reset to start
-    });
-    // Remove active class from all cards
-    document.querySelectorAll('.sound-card.active, .playlist-card.active').forEach(card => {
-        card.classList.remove('active');
-    });
-}
-
-// Function to play/pause the sound and toggle the active class for sound cards
+// Function to play/pause the sound and toggle the active class
 function toggleSound(cardElement, soundName) {
     const sound = sounds[soundName];
 
-    // Stop all playlists if a sound card is clicked
-    stopAll(playlists);
-
+    // Check if the sound is already playing
     if (sound.paused) {
         sound.play();
         cardElement.classList.add('active');
@@ -135,29 +119,35 @@ function toggleSound(cardElement, soundName) {
     }
 }
 
-// Function to play/pause the sound and toggle the active class for playlist cards
-function togglePlaylistSound(cardElement, playlistName) {
-    const playlist = playlists[playlistName];
+// Function to play/pause a playlist sound and ensure only one playlist plays at a time
+function togglePlaylistSound(cardElement, soundName) {
+    const sound = sounds[soundName];
 
-    // Stop all sounds if a playlist card is clicked
-    stopAll(sounds);
+    // If another playlist is playing, pause it
+    if (currentlyPlayingPlaylist && currentlyPlayingPlaylist !== sound) {
+        currentlyPlayingPlaylist.pause();
+        document.querySelector('.playlist-card.active')?.classList.remove('active');
+    }
 
-    if (playlist.paused) {
-        playlist.play();
+    // Toggle the selected playlist's play/pause state
+    if (sound.paused) {
+        sound.play();
         cardElement.classList.add('active');
+        currentlyPlayingPlaylist = sound;
     } else {
-        playlist.pause();
+        sound.pause();
         cardElement.classList.remove('active');
+        currentlyPlayingPlaylist = null;
     }
 }
 
-// Function to adjust the volume of a specific sound
+// Function to adjust the volume of the specific sound
 function adjustVolume(soundName, volume) {
     const sound = sounds[soundName];
-    sound.volume = volume / 100;
+    sound.volume = volume / 100; // Adjust volume between 0 and 1
 }
 
-// Event listener for each sound card to handle play/pause and volume control
+// Event listener for each sound card (for individual sounds)
 document.querySelectorAll('.sound-card').forEach(card => {
     const soundName = card.dataset.sound;
 
@@ -176,12 +166,12 @@ document.querySelectorAll('.sound-card').forEach(card => {
     });
 });
 
-// Event listener for each playlist card
+// Event listener for each playlist card (for playlist sounds)
 document.querySelectorAll('.playlist-card').forEach(card => {
-    const playlistName = card.dataset.sound;
+    const soundName = card.dataset.sound;
 
-    // Toggle play/pause when clicking the card
-    card.addEventListener('click', () => togglePlaylistSound(card, playlistName));
+    // Toggle play/pause when clicking the playlist card
+    card.addEventListener('click', () => togglePlaylistSound(card, soundName));
 });
 
 
