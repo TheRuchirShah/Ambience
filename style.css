@@ -182,9 +182,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 .playlist-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
+    flex-direction: row;
 }
 
 .playlist-card {
