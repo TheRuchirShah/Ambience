@@ -335,7 +335,7 @@ const sounds = {
 
 // Playlist sounds
 const playlists = {
-    lofi: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Drums.mp3'),
+    lofi: new Audio('https://drive.google.com/file/d/1Y9NvTp8tjFxhlxSSgplfmQlQvucUgHAy/view?usp=sharing'),
     jazz: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Train.mp3')
 };
 
