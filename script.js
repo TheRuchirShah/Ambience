@@ -325,7 +325,7 @@
 
 
 
-UP TO THIS IT IS ALL OK
+// UP TO THIS IT IS ALL OK
 
 // Define the sounds with their URLs
 const sounds = {
@@ -429,5 +429,5 @@ document.querySelectorAll('.playlist-card').forEach(card => {
 });
 
 
-UP TO THIS IT IS ALL OK
+// UP TO THIS IT IS ALL OK
 
