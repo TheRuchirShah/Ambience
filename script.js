@@ -341,7 +341,7 @@ const playlists = {
     dinner: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Dinner.mp3'),
     longdrive: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Long-Drive.mp3'),
     bollywood: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Bollywood.mp3'),
-    cozysunday: new Audio(''),
+    cozysunday: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Cozy-Sunday.mp3'),
     productivity: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Productivity.mp3'),
     gym: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Gym.mp3'),
     indianclassical: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Indian-Classical.mp3'),
