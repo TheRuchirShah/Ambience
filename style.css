@@ -253,8 +253,8 @@ background: linear-gradient(135deg, rgba(253,148,80,1) 30%, rgba(99,7,26,1) 80%)
 }
 
 .playlist-card[data-sound="bollywood"]:hover  {
-background: rgb(234,97,49);
-background: linear-gradient(135deg, rgba(234,97,49,1) 30%, rgba(188,33,23,1) 80%);
+ background: rgb(234,97,49);
+background: linear-gradient(135deg, rgba(234,97,49,1) 30%, rgba(158,16,7,1) 80%); 
 }
 
 .playlist-card[data-sound="cozysunday"]:hover  {
