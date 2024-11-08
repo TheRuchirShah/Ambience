@@ -295,6 +295,7 @@ background: linear-gradient(135deg, rgba(26,123,112,1) 30%, rgba(4,38,34,1) 80%)
 footer {
   background: #1e1e1e;
   width: 100%;
+  padding: 50px 0px 50px 0px;
 }
 
 .footer-links {
