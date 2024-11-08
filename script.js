@@ -335,7 +335,7 @@ const sounds = {
 
 // Playlist sounds
 const playlists = {
-    lofi: new Audio('.src/playlist/LoFi-Beats.mp3'),
+    lofi: new Audio('.src/playlist/Bollywood.mp3'),
     jazz: new Audio('src/sound/Birds.mp3')
 };
 
