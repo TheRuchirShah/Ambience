@@ -195,7 +195,7 @@ input[type="range"]::-webkit-slider-thumb {
     overflow: hidden;
     width: 175px;
     height: 270px !important;
-    position: relative;
+/*     position: relative; */
     cursor: pointer;
     border: 2px solid transparent;
     transition: all 0.4s ease;
