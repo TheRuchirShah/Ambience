@@ -335,8 +335,8 @@ const sounds = {
 
 // Playlist sounds
 const playlists = {
-    lofi: new Audio('https://github.com/TheRuchirShah/Test-Large-File/blob/main/src/playlist/Bollywood.mp3'),
-    jazz: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Train.mp3')
+    lofi: new Audio('.src/playlist/LoFi-Beats.mp3'),
+    jazz: new Audio('src/sound/Birds.mp3')
 };
 
 // Initialize each sound's volume to 50% and set to loop
