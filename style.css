@@ -360,3 +360,19 @@ footer {
   color: #ff0000 !important;
 }
 
+
+
+
+#nowPlayingSection {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#nowPlayingText {
+    font-weight: bold;
+}
+
