@@ -42,6 +42,9 @@
                 </svg>
                 <h3>River</h3>
                 <input type="range" id="river-volume" min="10" max="100" step="10" value="50">
+                <div id="nowPlayingSection">
+                    <span id="nowPlayingText">Not Playing</span>
+                </div>
             </div>
     
             <div id="waves-card" class="sound-card" data-sound="waves">
@@ -55,6 +58,9 @@
                 </svg>            
                 <h3>Waves</h3>
                 <input type="range" id="waves-volume" min="10" max="100" step="10" value="50">
+                <div id="nowPlayingSection">
+                    <span id="nowPlayingText">Not Playing</span>
+                </div>                
             </div>
             <div id="waves-card" class="sound-card" data-sound="waves">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,12 +362,18 @@
                     <h3 style="margin: 0px 0px 5px 0px; font-weight: 600;">LoFi Beats</h3>
                     <p style="margin: 5px 0px 10px 0px; color: #CCCCCC; font-weight: 400;">Midnight Serenity</p>
                 </div>
+                <div id="nowPlayingSection">
+                    <span id="nowPlayingText">Not Playing</span>
+                </div>
             </div>
             <div class="playlist-card" data-sound="jazz">
                 <img style="width: 150px; height: 150px; border-radius: 6px !important; margin: 20px 10px 10px 10px;" src="./files/images/playlist-jazz.png" alt="Jazz">
                 <div class="playlist-info">
                     <h3 style="margin: 0px 0px 5px 0px; font-weight: 600;">Jazz</h3>
                     <p style="margin: 5px 0px 10px 0px; color: #CCCCCC; font-weight: 400;">Groovy Vibes</p>
+                </div>
+                <div id="nowPlayingSection">
+                    <span id="nowPlayingText">Not Playing</span>
                 </div>
             </div>
             <div class="playlist-card" data-sound="meditation">
