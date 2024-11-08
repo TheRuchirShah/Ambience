@@ -327,213 +327,108 @@
 
 // UP TO THIS IT IS ALL OK
 
-// // Define the sounds with their URLs
-// const sounds = {
-//     river: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Rain.mp3'),
-//     waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
-// };
+// Define the sounds with their URLs
+const sounds = {
+    river: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Rain.mp3'),
+    waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
+};
 
-// // Playlist sounds
-// const playlists = {
-//     lofi: new Audio('.src/playlist/Bollywood.mp3'),
-//     jazz: new Audio('src/sound/Birds.mp3')
-// };
+// Playlist sounds
+const playlists = {
+    lofi: new Audio('.src/playlist/Bollywood.mp3'),
+    jazz: new Audio('src/sound/Birds.mp3')
+};
 
-// // Initialize each sound's volume to 50% and set to loop
-// Object.keys(sounds).forEach(soundName => {
-//     sounds[soundName].loop = true;
-//     sounds[soundName].volume = 0.5;
-// });
-// Object.keys(playlists).forEach(playlistName => {
-//     playlists[playlistName].loop = true;
-//     playlists[playlistName].volume = 0.5;
-// });
+// Initialize each sound's volume to 50% and set to loop
+Object.keys(sounds).forEach(soundName => {
+    sounds[soundName].loop = true;
+    sounds[soundName].volume = 0.5;
+});
+Object.keys(playlists).forEach(playlistName => {
+    playlists[playlistName].loop = true;
+    playlists[playlistName].volume = 0.5;
+});
 
-// let currentPlaylist = null;
+let currentPlaylist = null;
 
-// // Function to play/pause sound card
-// function toggleSound(cardElement, soundName) {
-//     const sound = sounds[soundName];
-//     if (sound.paused) {
-//         sound.play();
-//         cardElement.classList.add('active');
-//     } else {
-//         sound.pause();
-//         cardElement.classList.remove('active');
-//     }
-// }
+// Function to play/pause sound card
+function toggleSound(cardElement, soundName) {
+    const sound = sounds[soundName];
+    if (sound.paused) {
+        sound.play();
+        cardElement.classList.add('active');
+    } else {
+        sound.pause();
+        cardElement.classList.remove('active');
+    }
+}
 
-// // Function to play/pause playlist card with the desired toggle behavior
-// function togglePlaylist(cardElement, playlistName) {
-//     const playlist = playlists[playlistName];
+// Function to play/pause playlist card with the desired toggle behavior
+function togglePlaylist(cardElement, playlistName) {
+    const playlist = playlists[playlistName];
 
-//     // Stop currently playing playlist if it exists and is not the current one
-//     if (currentPlaylist && currentPlaylist !== playlist) {
-//         currentPlaylist.pause();
-//         document.querySelector('.playlist-card.active')?.classList.remove('active');
-//     }
+    // Stop currently playing playlist if it exists and is not the current one
+    if (currentPlaylist && currentPlaylist !== playlist) {
+        currentPlaylist.pause();
+        document.querySelector('.playlist-card.active')?.classList.remove('active');
+    }
 
-//     // Toggle the current playlist
-//     if (playlist.paused) {
-//         playlist.play();
-//         cardElement.classList.add('active');
-//         currentPlaylist = playlist;
-//     } else {
-//         playlist.pause();
-//         cardElement.classList.remove('active');
-//         currentPlaylist = null;
-//     }
+    // Toggle the current playlist
+    if (playlist.paused) {
+        playlist.play();
+        cardElement.classList.add('active');
+        currentPlaylist = playlist;
+    } else {
+        playlist.pause();
+        cardElement.classList.remove('active');
+        currentPlaylist = null;
+    }
 
-//     // Stop all sound cards when a playlist is active
-//     if (currentPlaylist) {
-//         stopAllSounds();
-//     }
-// }
+    // Stop all sound cards when a playlist is active
+    if (currentPlaylist) {
+        stopAllSounds();
+    }
+}
 
-// // Stop all sound cards when a playlist is playing
-// function stopAllSounds() {
-//     Object.keys(sounds).forEach(soundName => {
-//         sounds[soundName].pause();
-//         document.querySelector(`.sound-card[data-sound="${soundName}"]`)?.classList.remove('active');
-//     });
-// }
+// Stop all sound cards when a playlist is playing
+function stopAllSounds() {
+    Object.keys(sounds).forEach(soundName => {
+        sounds[soundName].pause();
+        document.querySelector(`.sound-card[data-sound="${soundName}"]`)?.classList.remove('active');
+    });
+}
 
-// // Event listener for sound cards
-// document.querySelectorAll('.sound-card').forEach(card => {
-//     const soundName = card.dataset.sound;
+// Event listener for sound cards
+document.querySelectorAll('.sound-card').forEach(card => {
+    const soundName = card.dataset.sound;
 
-//     card.addEventListener('click', (e) => {
-//         if (e.target.tagName !== 'INPUT') { // Ignore volume slider clicks
-//             toggleSound(card, soundName);
-//             if (currentPlaylist) {
-//                 currentPlaylist.pause();
-//                 document.querySelector('.playlist-card.active')?.classList.remove('active');
-//                 currentPlaylist = null;
-//             }
-//         }
-//     });
+    card.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'INPUT') { // Ignore volume slider clicks
+            toggleSound(card, soundName);
+            if (currentPlaylist) {
+                currentPlaylist.pause();
+                document.querySelector('.playlist-card.active')?.classList.remove('active');
+                currentPlaylist = null;
+            }
+        }
+    });
 
-//     // Volume control
-//     const volumeSlider = card.querySelector('input[type="range"]');
-//     volumeSlider.addEventListener('input', (e) => {
-//         sounds[soundName].volume = e.target.value / 100;
-//         e.stopPropagation();
-//     });
-// });
+    // Volume control
+    const volumeSlider = card.querySelector('input[type="range"]');
+    volumeSlider.addEventListener('input', (e) => {
+        sounds[soundName].volume = e.target.value / 100;
+        e.stopPropagation();
+    });
+});
 
-// // Event listener for playlist cards
-// document.querySelectorAll('.playlist-card').forEach(card => {
-//     const playlistName = card.dataset.sound;
+// Event listener for playlist cards
+document.querySelectorAll('.playlist-card').forEach(card => {
+    const playlistName = card.dataset.sound;
 
-//     card.addEventListener('click', () => togglePlaylist(card, playlistName));
-// });
+    card.addEventListener('click', () => togglePlaylist(card, playlistName));
+});
 
 
 // UP TO THIS IT IS ALL OK
 
-
-
-
-
-
-
-
-// Object to store audio instances for sound and playlist cards
-const sounds = {};
-const playlists = {};
-
-// Function to play/pause sound cards (multiple sound cards can play simultaneously)
-function toggleSoundCard(cardElement, soundName) {
-    // Lazy load sound if not already loaded
-    if (!sounds[soundName]) {
-        sounds[soundName] = new Audio(cardElement.dataset.src);
-        sounds[soundName].loop = true;
-        sounds[soundName].volume = 0.5; // Set default volume
-    }
-    
-    const sound = sounds[soundName];
-
-    // Play or pause the selected sound card
-    if (sound.paused) {
-        sound.play();
-        cardElement.classList.add("active");
-    } else {
-        sound.pause();
-        cardElement.classList.remove("active");
-    }
-}
-
-// Function to play/pause playlist cards (only one playlist card can play at a time)
-function togglePlaylistCard(cardElement, soundName) {
-    // Stop all other playlists
-    Object.keys(playlists).forEach(name => {
-        if (name !== soundName) {
-            playlists[name].pause();
-            const otherCard = document.querySelector(`.playlist-card[data-sound="${name}"]`);
-            otherCard && otherCard.classList.remove("active");
-        }
-    });
-
-    // Lazy load playlist if not already loaded
-    if (!playlists[soundName]) {
-        playlists[soundName] = new Audio(cardElement.dataset.src);
-        playlists[soundName].loop = true;
-        playlists[soundName].volume = 0.5;
-    }
-
-    const playlist = playlists[soundName];
-
-    // Show loading indicator until the audio starts
-    if (playlist.paused) {
-        cardElement.classList.add("loading"); // Show loading indicator
-
-        playlist.play().then(() => {
-            cardElement.classList.remove("loading"); // Hide loading indicator when audio starts
-            cardElement.classList.add("active");
-            stopAllSoundCards(); // Ensure no sound cards are playing
-        }).catch(error => {
-            console.error("Error playing playlist:", error);
-        });
-    } else {
-        playlist.pause();
-        cardElement.classList.remove("active");
-    }
-}
-
-// Function to stop all sound cards when a playlist card is playing
-function stopAllSoundCards() {
-    Object.keys(sounds).forEach(name => {
-        sounds[name].pause();
-        const soundCard = document.querySelector(`.sound-card[data-sound="${name}"]`);
-        soundCard && soundCard.classList.remove("active");
-    });
-}
-
-// Event listener for each sound card to handle play/pause and volume control
-document.querySelectorAll(".sound-card").forEach(card => {
-    const soundName = card.dataset.sound;
-
-    // Play/pause sound on card click (excluding volume slider)
-    card.addEventListener("click", (e) => {
-        if (e.target.tagName !== "INPUT") {
-            toggleSoundCard(card, soundName);
-        }
-    });
-
-    // Adjust volume based on range slider input
-    const volumeSlider = card.querySelector("input[type='range']");
-    volumeSlider.addEventListener("input", (e) => {
-        if (sounds[soundName]) {
-            sounds[soundName].volume = e.target.value / 100; // Set volume 0-1 range
-        }
-        e.stopPropagation(); // Prevent click event on the card
-    });
-});
-
-// Event listener for each playlist card to handle play/pause
-document.querySelectorAll(".playlist-card").forEach(card => {
-    const soundName = card.dataset.sound;
-
-    card.addEventListener("click", () => togglePlaylistCard(card, soundName));
-});
 
