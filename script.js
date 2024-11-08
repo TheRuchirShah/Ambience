@@ -336,7 +336,17 @@ const sounds = {
 // Playlist sounds
 const playlists = {
     lofi: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/LoFi-Beats.mp3'),
-    jazz: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Jazz.mp3')
+    jazz: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Jazz.mp3'),
+    meditation: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Meditation.mp3'),
+    dinner: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Dinner.mp3'),
+    longdrive: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Long-Drive.mp3'),
+    bollywood: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Bollywood.mp3'),
+    cozysunday: new Audio(''),
+    productivity: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Productivity.mp3'),
+    gym: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Gym.mp3'),
+    indianclassical: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Indian-Classical.mp3'),
+    morning: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Morning.mp3'),
+    rainymood: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Rainy-Mood.mp3')
 };
 
 // Initialize each sound's volume to 50% and set to loop
