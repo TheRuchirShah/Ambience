@@ -290,4 +290,75 @@ background: linear-gradient(135deg, rgba(26,123,112,1) 30%, rgba(4,38,34,1) 80%)
 
 
 
+/* FOOTER CSS */
+
+footer {
+  background: #1e1e1e;
+  width: 100%;
+  padding: 20px !important;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+  margin: 20px;
+}
+
+.footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+  color: #cccccc;
+  padding: 0px;
+  margin: 20px;
+}
+
+.s1 {
+  border: 0;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(204, 204, 204, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  line-height: 25px;
+  margin:20px;
+}
+
+.footer-copyright-text a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-copyright-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #cccccc;
+  text-decoration: none;
+  margin: 20px;
+}
+.footer-copyright-text a {
+  font-weight: 700;
+  color: #ff5e1f !important;
+}
+#heart-icon {
+  color: #ff0000 !important;
+}
+
+
+
 
