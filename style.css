@@ -304,7 +304,7 @@ footer {
   list-style-type: none;
   justify-content: center;
   gap: 20px;
-  padding: 0px;
+  padding: 10px;
   margin: 20px;
 }
 
@@ -320,7 +320,7 @@ footer {
   justify-content: center;
   gap: 20px;
   color: #cccccc;
-  padding: 0px;
+  padding: 10px;
   margin: 20px;
 }
 
@@ -349,6 +349,7 @@ footer {
   justify-content: center;
   color: #cccccc;
   text-decoration: none;
+  padding: 10px;
   margin: 20px;
 }
 .footer-copyright-text a {
