@@ -317,6 +317,7 @@ footer {
   gap: 20px;
   padding: 0px;
   margin: 20px;
+  font-size: 14px;
 }
 
 .footer-links a {
@@ -336,8 +337,7 @@ footer {
 }
 
 .footer-social-links a:hover {
-  color: #000000;
-  border: 1px solid #cccccc; 
+  color: #FF5E1F ;
 }
 
 .s1 {
@@ -367,6 +367,7 @@ footer {
   text-decoration: none;
   padding: 0px;
   margin: 10px;
+  font-size: 14px;
 }
 .footer-copyright-text a {
   font-weight: 500;
