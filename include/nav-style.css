@@ -49,11 +49,16 @@ a {
   }
 }
 
+nav a {
+  text-decoration: none;
+}
+
 #nav-logo a {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+  gap: 10px;
 }
 
 
