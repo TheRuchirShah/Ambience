@@ -68,6 +68,12 @@ body {
     letter-spacing: 0.5px;
 }
 
+p {
+  text-align: center;
+  margin: 0px 100px;
+  line-height: 1.5;
+}
+
 h1 {
     font-size: 26px;
     margin-bottom: 20px;
