@@ -335,6 +335,11 @@ footer {
   margin: 20px;
 }
 
+.footer-social-links a:hover {
+  color: #000000;
+  border: 1px solid #cccccc; 
+}
+
 .s1 {
   border: 0;
   height: 1px;
