@@ -329,7 +329,7 @@
 
 // Define the sounds with their URLs
 const sounds = {
-    river: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Rain.mp3'),
+    river: new Audio('.src/sound/Cafe.mp3'),
     waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
 };
 
