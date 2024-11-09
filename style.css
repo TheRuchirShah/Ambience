@@ -287,6 +287,16 @@ background: rgb(26,123,112);
 background: linear-gradient(135deg, rgba(26,123,112,1) 30%, rgba(4,38,34,1) 80%);
 }
 
+.playlist-card[data-sound="sleep"]:hover  {
+background: rgb(40,131,170);
+background: linear-gradient(135deg, rgba(40,131,170,1) 30%, rgba(2,41,60,1) 50%);
+}
+
+.playlist-card[data-sound="nordic"]:hover  {
+background: rgb(192,79,22);
+background: linear-gradient(135deg, rgba(192,79,22,1) 30%, rgba(99,10,8,1) 50%);
+}
+
 
 
 
