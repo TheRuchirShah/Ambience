@@ -153,6 +153,9 @@ input[type="range"]::-webkit-slider-thumb {
     h1 {
         font-size: 22px;
     }
+    p {
+      margin: 20px 30px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -168,6 +171,9 @@ input[type="range"]::-webkit-slider-thumb {
     h1 {
         font-size: 28px;
     }
+    p {
+      margin: 20px 40px;
+    {
 }
 
 @media (min-width: 1024px) {
