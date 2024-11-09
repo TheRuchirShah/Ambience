@@ -49,11 +49,12 @@ a {
   }
 }
 
-//img {
-//  width: 100%;
-//  min-height: 200vh;
-//  object-fit: cover;
-//}
+#nav-logo a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
 
 
 
