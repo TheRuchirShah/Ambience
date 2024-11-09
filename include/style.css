@@ -171,9 +171,6 @@ input[type="range"]::-webkit-slider-thumb {
     h1 {
         font-size: 28px;
     }
-    p {
-      margin: 20px 40px;
-    {
 }
 
 @media (min-width: 1024px) {
@@ -332,7 +329,7 @@ footer {
   width: 100%;
   padding: 50px 0px 10px 0px;
 }
-
+  
 .footer-links {
   display: flex;
   flex-direction: row;
