@@ -329,6 +329,7 @@
 
 // Define the sounds with their URLs
 const sounds = {
+    // Nature Sounds
     river: new Audio('./src/sound/Cafe.mp3'),
     waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
 };
@@ -346,7 +347,9 @@ const playlists = {
     gym: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Gym.mp3'),
     indianclassical: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Indian-Classical.mp3'),
     morning: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Morning.mp3'),
-    rainymood: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Rainy-Mood.mp3')
+    rainymood: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Rainy-Mood.mp3'),
+    sleep: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Sleep.mp3'),
+    nordic: new Audio('https://theruchirshah.github.io/Music-Streamer/files/audio/Nordic.mp3')
 };
 
 // Initialize each sound's volume to 50% and set to loop
