@@ -68,6 +68,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+.about-section {
+    margin: 0px 70px;
+}
+
 #about-ambience p {
     text-align: left;
     margin: 20px 70px;
