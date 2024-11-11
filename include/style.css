@@ -162,10 +162,6 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 22px;
     }
 
-    /*     #about-ambience p {
-        margin: 10px 30px;
-        width: auto; 
-    }*/
     .about-section {
         margin: 0px 30px;
     }
@@ -184,6 +180,10 @@ input[type="range"]::-webkit-slider-thumb {
     h1 {
         font-size: 28px;
     }
+
+    .about-section {
+        margin: 0px 70px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -200,6 +200,9 @@ input[type="range"]::-webkit-slider-thumb {
 
     h1 {
         font-size: 32px;
+    }
+    .about-section {
+        margin: 0px 70px;
     }
 }
 
