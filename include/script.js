@@ -3,7 +3,7 @@
 // Define the sounds with their URLs
 const sounds = {
     // Nature Sounds
-    river: new Audio('.\src\sound\River.mp3'),
+    river: new Audio('./src/sound/River.mp3'),
     waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
 };
 
@@ -56,7 +56,7 @@ function togglePlaylist(cardElement, playlistName) {
     // Stop currently playing playlist if it exists and is not the current one
     if (currentPlaylist && currentPlaylist !== playlist) {
         currentPlaylist.pause();
-        document.querySelector('.playlist-card.active') ? .classList.remove('active');
+        document.querySelector('.playlist-card.active') ?.classList.remove('active');
     }
 
     // Toggle the current playlist
@@ -80,7 +80,7 @@ function togglePlaylist(cardElement, playlistName) {
 function stopAllSounds() {
     Object.keys(sounds).forEach(soundName => {
         sounds[soundName].pause();
-        document.querySelector(`.sound-card[data-sound="${soundName}"]`) ? .classList.remove('active');
+        document.querySelector(`.sound-card[data-sound="${soundName}"]`) ?.classList.remove('active');
     });
 }
 
@@ -93,7 +93,7 @@ document.querySelectorAll('.sound-card').forEach(card => {
             toggleSound(card, soundName);
             if (currentPlaylist) {
                 currentPlaylist.pause();
-                document.querySelector('.playlist-card.active') ? .classList.remove('active');
+                document.querySelector('.playlist-card.active') ?.classList.remove('active');
                 currentPlaylist = null;
             }
         }
