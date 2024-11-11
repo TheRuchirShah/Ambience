@@ -19,7 +19,18 @@ const sounds = {
     thunder: new Audio('./src/sound/Thunder.mp3'),
     rainonroof: new Audio('./src/sound/Rain-on-Roof.mp3'),
     rainonwindow: new Audio('./src/sound/Rain-on-Window.mp3'),
-    rainontent: new Audio('./src/sound/Rain-on-Tent.mp3')
+    rainontent: new Audio('./src/sound/Rain-on-Tent.mp3'),
+
+    // Creature Sounds
+    birds: new Audio('./src/sound/Birds.mp3'),
+    seagulls: new Audio('./src/sound/Seagull.mp3'),
+    crickets: new Audio('./src/sound/Crickets.mp3'),
+    wolfhowl: new Audio('./src/sound/Wolf.mp3'),
+    owl: new Audio('./src/sound/Owl.mp3'),
+    frog: new Audio('./src/sound/Frog.mp3'),
+    horse: new Audio('./src/sound/Horse.mp3'),
+    cat: new Audio('./src/sound/Cat.mp3'),
+    cattle: new Audio('./src/sound/Cattle.mp3')
 };
 
 // Playlist sounds
