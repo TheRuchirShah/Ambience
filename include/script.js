@@ -31,6 +31,20 @@ const sounds = {
     horse: new Audio('./src/sound/Horse.mp3'),
     cat: new Audio('./src/sound/Cat.mp3'),
     cattle: new Audio('./src/sound/Cattle.mp3')
+
+    // Urban Sounds
+
+
+    // Place Sounds
+
+
+    // Transport Sounds
+
+    
+    // Object Sounds
+
+
+    // Noise Sounds
 };
 
 // Playlist sounds
