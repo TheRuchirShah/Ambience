@@ -13,7 +13,7 @@ const sounds = {
     forest: new Audio('./src/sound/Forest.mp3'),
     frogandinsect: new Audio('./src/sound/Frog-and-Insects.mp3')
     
-    // Nature Sounds
+    // Rain Sounds
 };
 
 // Playlist sounds
