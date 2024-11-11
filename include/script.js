@@ -11,9 +11,15 @@ const sounds = {
     snow: new Audio('./src/sound/Snow.mp3'),
     autumnleaves: new Audio('./src/sound/Autumn-Leaves.mp3'),
     forest: new Audio('./src/sound/Forest.mp3'),
-    frogandinsects: new Audio('./src/sound/Frog-and-Insects.mp3')
+    frogandinsects: new Audio('./src/sound/Frog-and-Insects.mp3'),
     
     // Rain Sounds
+    lightrain: new Audio('./src/sound/Light-Rain.mp3'),
+    heavyrain: new Audio('./src/sound/Heavy-Rain.mp3'),
+    thunder: new Audio('./src/sound/Thunder.mp3'),
+    rainonroof: new Audio('./src/sound/Rain-on-Roof.mp3'),
+    rainonwindow: new Audio('./src/sound/Rain-on-Window.mp3'),
+    rainontent: new Audio('./src/sound/Rain-on-Tent.mp3')
 };
 
 // Playlist sounds
