@@ -11,7 +11,7 @@ const sounds = {
     snow: new Audio('./src/sound/Snow.mp3'),
     autumnleaves: new Audio('./src/sound/Autumn-Leaves.mp3'),
     forest: new Audio('./src/sound/Forest.mp3'),
-    frogandinsect: new Audio('./src/sound/Frog-and-Insects.mp3')
+    frogandinsects: new Audio('./src/sound/Frog-and-Insects.mp3')
     
     // Rain Sounds
 };
