@@ -4,7 +4,16 @@
 const sounds = {
     // Nature Sounds
     river: new Audio('./src/sound/River.mp3'),
-    waves: new Audio('https://theruchirshah.github.io/My-Files/files/audio/Birds.mp3')
+    waves: new Audio('./src/sound/Waves.mp3'),
+    campfire: new Audio('./src/sound/Campfire.mp3'),
+    wind: new Audio('./src/sound/Wind.mp3'),
+    trees: new Audio('./src/sound/Trees.mp3'),
+    snow: new Audio('./src/sound/Snow.mp3'),
+    autumnleaves: new Audio('./src/sound/Autumn-Leaves.mp3')
+    forest: new Audio('./src/sound/Forest.mp3')
+    frogandinsect: new Audio('./src/sound/Frog-and-Insects.mp3')
+    
+    // Nature Sounds
 };
 
 // Playlist sounds
