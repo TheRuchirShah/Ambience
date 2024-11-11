@@ -261,7 +261,9 @@ input[type="range"]::-webkit-slider-thumb {
 
 .playlist-info p {
     font-size: 0.8rem;
-    color: #bbb;
+    margin: 5px 0px 10px 0px;
+    color: #CCCCCC;
+    font-weight: 400;
 }
 
 
