@@ -9,8 +9,8 @@ const sounds = {
     wind: new Audio('./src/sound/Wind.mp3'),
     trees: new Audio('./src/sound/Trees.mp3'),
     snow: new Audio('./src/sound/Snow.mp3'),
-    autumnleaves: new Audio('./src/sound/Autumn-Leaves.mp3')
-    forest: new Audio('./src/sound/Forest.mp3')
+    autumnleaves: new Audio('./src/sound/Autumn-Leaves.mp3'),
+    forest: new Audio('./src/sound/Forest.mp3'),
     frogandinsect: new Audio('./src/sound/Frog-and-Insects.mp3')
     
     // Nature Sounds
