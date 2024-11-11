@@ -4,29 +4,29 @@
 // <weight>: Use a value from 300 to 800
 
 .open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 400 to 800
 
 .eb-garamond-<uniquifier> {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 body {
     background-color: #111111;
     color: #f5f5f5;
     font-family: Open Sans, sans-serif;
-/*     display: flex;
+    /*     display: flex;
     justify-content: center;
     align-items: center; */
     height: 100%;
@@ -75,7 +75,7 @@ body {
 
 #about-ambience p {
     text-align: left;
-/*     margin: 20px 70px; */
+    /*     margin: 20px 70px; */
     line-height: 1.5;
 }
 
@@ -100,7 +100,8 @@ h1 {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    width: 90%; /* Adjust to fit on smaller screens */
+    width: 90%;
+    /* Adjust to fit on smaller screens */
     max-width: 300px;
     margin: 10px auto;
     text-align: center;
@@ -135,7 +136,8 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-.sound-card.active, .playlist-card.active {
+.sound-card.active,
+.playlist-card.active {
     background-color: #FF5E1F !important;
     border-color: #F5F5F5;
     box-shadow: rgba(255, 255, 255, 0.52) 0px 10px 100px -20px, rgba(0, 0, 0, 0.3) 0px -10px 60px -30px;
@@ -152,6 +154,7 @@ input[type="range"]::-webkit-slider-thumb {
         max-width: 110px;
         margin: 15px;
     }
+
     .sound-card h3 {
         font-size: 14px;
     }
@@ -159,7 +162,8 @@ input[type="range"]::-webkit-slider-thumb {
     h1 {
         font-size: 22px;
     }
-/*     #about-ambience p {
+
+    /*     #about-ambience p {
         margin: 10px 30px;
         width: auto; 
     }*/
@@ -227,7 +231,7 @@ input[type="range"]::-webkit-slider-thumb {
     overflow: hidden;
     width: 175px;
     height: 270px !important;
-/*     position: relative; */
+    /*     position: relative; */
     cursor: pointer;
     border: 2px solid transparent;
     transition: all 0.4s ease;
@@ -260,73 +264,73 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Different gradient backgrounds for each playlist card */
 .playlist-card[data-sound="lofi"]:hover {
-    background: rgb(38,141,115);
-    background: linear-gradient(135deg, rgba(38,141,115,1) 30%, rgba(16,80,63,1) 80%);
+    background: rgb(38, 141, 115);
+    background: linear-gradient(135deg, rgba(38, 141, 115, 1) 30%, rgba(16, 80, 63, 1) 80%);
 }
 
-.playlist-card[data-sound="jazz"]:hover  {
-    background: rgb(224,178,76);
-    background: linear-gradient(135deg, rgba(224,178,76,1) 30%, rgba(166,67,19,1) 80%);
+.playlist-card[data-sound="jazz"]:hover {
+    background: rgb(224, 178, 76);
+    background: linear-gradient(135deg, rgba(224, 178, 76, 1) 30%, rgba(166, 67, 19, 1) 80%);
 }
 
-.playlist-card[data-sound="meditation"]:hover  {
-background: rgb(4,147,145);
-background: linear-gradient(135deg, rgba(4,147,145,1) 30%, rgba(24,6,49,1) 80%);
+.playlist-card[data-sound="meditation"]:hover {
+    background: rgb(4, 147, 145);
+    background: linear-gradient(135deg, rgba(4, 147, 145, 1) 30%, rgba(24, 6, 49, 1) 80%);
 }
 
-.playlist-card[data-sound="dinner"]:hover  {
-background: rgb(222,83,43);
-background: linear-gradient(135deg, rgba(222,83,43,1) 30%, rgba(69,18,51,1) 80%);
+.playlist-card[data-sound="dinner"]:hover {
+    background: rgb(222, 83, 43);
+    background: linear-gradient(135deg, rgba(222, 83, 43, 1) 30%, rgba(69, 18, 51, 1) 80%);
 }
 
-.playlist-card[data-sound="longdrive"]:hover  {
-background: rgb(253,148,80);
-background: linear-gradient(135deg, rgba(253,148,80,1) 30%, rgba(99,7,26,1) 80%);
+.playlist-card[data-sound="longdrive"]:hover {
+    background: rgb(253, 148, 80);
+    background: linear-gradient(135deg, rgba(253, 148, 80, 1) 30%, rgba(99, 7, 26, 1) 80%);
 }
 
-.playlist-card[data-sound="bollywood"]:hover  {
- background: rgb(234,97,49);
-background: linear-gradient(135deg, rgba(234,97,49,1) 30%, rgba(158,16,7,1) 80%); 
+.playlist-card[data-sound="bollywood"]:hover {
+    background: rgb(234, 97, 49);
+    background: linear-gradient(135deg, rgba(234, 97, 49, 1) 30%, rgba(158, 16, 7, 1) 80%);
 }
 
-.playlist-card[data-sound="cozysunday"]:hover  {
-background: rgb(204,114,41);
-background: linear-gradient(135deg, rgba(204,114,41,1) 30%, rgba(84,33,8,1) 80%);
+.playlist-card[data-sound="cozysunday"]:hover {
+    background: rgb(204, 114, 41);
+    background: linear-gradient(135deg, rgba(204, 114, 41, 1) 30%, rgba(84, 33, 8, 1) 80%);
 }
 
-.playlist-card[data-sound="productivity"]:hover  {
-background: rgb(39,129,192);
-background: linear-gradient(135deg, rgba(39,129,192,1) 30%, rgba(25,42,58,1) 80%);
+.playlist-card[data-sound="productivity"]:hover {
+    background: rgb(39, 129, 192);
+    background: linear-gradient(135deg, rgba(39, 129, 192, 1) 30%, rgba(25, 42, 58, 1) 80%);
 }
 
-.playlist-card[data-sound="gym"]:hover  {
-background: rgb(0,133,41);
-background: linear-gradient(135deg, rgba(0,133,41,1) 30%, rgba(4,9,16,1) 80%);
+.playlist-card[data-sound="gym"]:hover {
+    background: rgb(0, 133, 41);
+    background: linear-gradient(135deg, rgba(0, 133, 41, 1) 30%, rgba(4, 9, 16, 1) 80%);
 }
 
-.playlist-card[data-sound="indianclassical"]:hover  {
-background: rgb(129,59,27);
-background: linear-gradient(135deg, rgba(129,59,27,1) 30%, rgba(36,15,6,1) 80%);
+.playlist-card[data-sound="indianclassical"]:hover {
+    background: rgb(129, 59, 27);
+    background: linear-gradient(135deg, rgba(129, 59, 27, 1) 30%, rgba(36, 15, 6, 1) 80%);
 }
 
-.playlist-card[data-sound="morning"]:hover  {
-background: rgb(253,160,47);
-background: linear-gradient(135deg, rgba(253,160,47,1) 30%, rgba(142,60,0,1) 80%);
+.playlist-card[data-sound="morning"]:hover {
+    background: rgb(253, 160, 47);
+    background: linear-gradient(135deg, rgba(253, 160, 47, 1) 30%, rgba(142, 60, 0, 1) 80%);
 }
 
-.playlist-card[data-sound="rainymood"]:hover  {
-background: rgb(26,123,112);
-background: linear-gradient(135deg, rgba(26,123,112,1) 30%, rgba(4,38,34,1) 80%);
+.playlist-card[data-sound="rainymood"]:hover {
+    background: rgb(26, 123, 112);
+    background: linear-gradient(135deg, rgba(26, 123, 112, 1) 30%, rgba(4, 38, 34, 1) 80%);
 }
 
-.playlist-card[data-sound="sleep"]:hover  {
-background: rgb(192,79,22);
-background: linear-gradient(135deg, rgba(192,79,22,1) 30%, rgba(99,10,8,1) 80%);
+.playlist-card[data-sound="sleep"]:hover {
+    background: rgb(192, 79, 22);
+    background: linear-gradient(135deg, rgba(192, 79, 22, 1) 30%, rgba(99, 10, 8, 1) 80%);
 }
 
-.playlist-card[data-sound="nordic"]:hover  {
-background: rgb(40,131,170);
-background: linear-gradient(135deg, rgba(40,131,170,1) 30%, rgba(2,41,60,1) 80%);
+.playlist-card[data-sound="nordic"]:hover {
+    background: rgb(40, 131, 170);
+    background: linear-gradient(135deg, rgba(40, 131, 170, 1) 30%, rgba(2, 41, 60, 1) 80%);
 }
 
 
@@ -335,80 +339,75 @@ background: linear-gradient(135deg, rgba(40,131,170,1) 30%, rgba(2,41,60,1) 80%)
 /* FOOTER CSS */
 
 footer {
-/*   background: #1e1e1e; */
-  width: 100%;
-  padding: 50px 0px 10px 0px;
+    /*   background: #1e1e1e; */
+    width: 100%;
+    padding: 50px 0px 10px 0px;
 }
-  
+
 .footer-links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px;
-  margin: 20px;
-  font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
+    margin: 20px;
+    font-size: 14px;
 }
 
 .footer-links a {
-  color: #cccccc;
-  text-decoration: none;
+    color: #cccccc;
+    text-decoration: none;
 }
 
 .footer-social-links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: center;
-  gap: 20px;
-  color: #cccccc;
-  padding: 0px;
-  margin: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+    color: #cccccc;
+    padding: 0px;
+    margin: 20px;
 }
 
 .footer-social-links a:hover {
-  color: #FF5E1F;
+    color: #FF5E1F;
 }
 
 .s1 {
-  border: 0;
-  height: 1px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(204, 204, 204, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  line-height: 25px;
-  margin: 10px;
+    border: 0;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(204, 204, 204, 1) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    line-height: 25px;
+    margin: 10px;
 }
 
 .footer-copyright-text a {
-  color: #cccccc;
-  text-decoration: none;
+    color: #cccccc;
+    text-decoration: none;
 }
 
 .footer-copyright-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #cccccc;
-  text-decoration: none;
-  padding: 0px;
-  margin: 10px;
-  font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0px;
+    margin: 10px;
+    font-size: 14px;
 }
+
 .footer-copyright-text a {
-  font-weight: 500;
-  color: #F5F5F5 !important;
+    font-weight: 500;
+    color: #F5F5F5 !important;
 }
+
 #heart-icon {
-  color: #ff0000 !important;
+    color: #ff0000 !important;
 }
-
-
-
-
-
