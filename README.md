@@ -44,7 +44,7 @@ We’re actively working on new features and improvements. Planned updates inclu
 
 For questions, feedback, or suggestions, please reach out via:
 
-- **Email**: [your.email@example.com](https://ruchir-website.vercel.app/contact.html)
+- **Email**: [Contact here](https://ruchir-website.vercel.app/contact.html)
 - **GitHub Issues**: Use GitHub issues to report bugs or request features.
 
 ---
