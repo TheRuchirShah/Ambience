@@ -3,10 +3,10 @@
 # Ambient Music Webapp
 
 # Ambience 🎶 [![MyFiles Site Screenshot](files/logo/logo.svg)](https://github.com/TheRuchirShah/Ambience)
-[![MyFiles Site Screenshot](files/logo/full_logo.svg)](https://github.com/TheRuchirShah/Ambience)
+[![Ambience](files/logo/full_logo.svg)](https://github.com/TheRuchirShah/Ambience)files/logo/social_share_link_img.jpg
 
 **Ambience** is a web app for creating personalized ambient soundscapes, crafted to enhance focus, inspire creativity, and promote relaxation. Ideal for work, study, meditation, or unwinding, Ambience is your go-to tool for tuning out distractions and tuning into productivity.
-
+[![Ambience](files/logo/social_share_link_img.jpg)](https://github.com/TheRuchirShah/Ambience)
 ---
 
 ## 🌟 Features
@@ -39,19 +39,18 @@ We’re actively working on new features and improvements. Planned updates inclu
 
 ---
 
-
 ## 📞 Contact
 
 For questions, feedback, or suggestions, please reach out via:
 
-- **Email**: your.email@example.com
+- **Email**: [your.email@example.com](https://ruchir-website.vercel.app/contact.html)
 - **GitHub Issues**: Use GitHub issues to report bugs or request features.
 
 ---
 
 ## 🙌 Acknowledgments
 
-Ambience is inspired by apps like [Noisli](https://noisli.com/), [A Soft Murmur](https://asoftmurmur.com/), and [Moodist](https://moodist.com/). Special thanks to the open-source community for tools, libraries, and inspiration.
+Ambience is inspired by apps like [Noisli](https://noisli.com/), and [A Soft Murmur](https://asoftmurmur.com/). Special thanks to the open-source community for tools, libraries, and inspiration.
 
 ---
 
