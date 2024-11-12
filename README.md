@@ -37,6 +37,9 @@ We’re actively working on new features and improvements. Planned updates inclu
 - **Theme Customization**: Switch between light and dark modes.
 - **Enhanced Sound Categories**: Group sounds by themes, such as nature, urban, instrumental, etc.
 - **Mobile App Version**: Extend Ambience to iOS and Android platforms.
+- **Countdown**: Timer for break, breathing exercise, peace and many more.
+- **Sleep timer**: At the end of the countdown, Sleep Timer softly fades your music out and stops it.
+- **Writer Pad**: Take your writing creativity at next level with in app writer pad.
 
 ---
 
