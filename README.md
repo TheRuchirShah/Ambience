@@ -19,7 +19,6 @@ At Ambience, we believe in the transformative power of sound. Our curated collec
 - **Seamless Volume Control**: Adjust volume sliders for each sound independently to customize your sound mix and find the perfect balance.
 - **Responsive Design**: Fully optimized for desktop and mobile, enabling you to create soundscapes on any device.
 
-
 ---
 
 ## 💻 Usage
@@ -28,7 +27,6 @@ At Ambience, we believe in the transformative power of sound. Our curated collec
 2. **Customize Soundscapes**: Click on different sound cards to activate them and create your unique sound mix. Active sounds are highlighted for easy tracking.
 3. **Adjust Volume**: Use volume controls to fine-tune the sound levels for each active card, achieving the perfect ambiance.
 4. **Save Soundscapes (Future Feature)**: Plans for adding a feature to save custom soundscapes and access them later.
-
 
 ---
 
@@ -63,5 +61,5 @@ Ambience is inspired by apps like [Noisli](https://noisli.com/), and [A Soft Mur
 
 **Ambience** is a web app for creating personalized ambient soundscapes, crafted to enhance focus, inspire creativity, and promote relaxation. Ideal for work, study, meditation, or unwinding, Ambience is your go-to tool for tuning out distractions and tuning into productivity.
 
-Enjoy your journey into focused, creative, and relaxed states with **Ambience**! 🌊 🎶 🌿
+Enjoy your journey into focused, creative, and relaxed states with **Ambience**! 🌊 🎶 🌿 🕺🏼 🎷
 
