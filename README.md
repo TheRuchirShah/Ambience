@@ -1,6 +1,7 @@
+<span style="color: #111111">
 # Ambient Music Webapp
 
-# Ambience 🎶
+# Ambience 🎶 [![MyFiles Site Screenshot](files/logo/logo.svg)](https://github.com/TheRuchirShah/Ambience)
 [![MyFiles Site Screenshot](files/logo/full_logo.svg)](https://github.com/TheRuchirShah/Ambience)
 
 **Ambience** is a web app for creating personalized ambient soundscapes, crafted to enhance focus, inspire creativity, and promote relaxation. Ideal for work, study, meditation, or unwinding, Ambience is your go-to tool for tuning out distractions and tuning into productivity.
@@ -54,3 +55,5 @@ Ambience is inspired by apps like [Noisli](https://noisli.com/), [A Soft Murmur]
 ---
 
 Enjoy your journey into focused, creative, and relaxed states with **Ambience**! 🌊 🎶 🌿
+
+ </span>
