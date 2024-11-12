@@ -30,21 +30,50 @@ const sounds = {
     frog: new Audio('./src/sound/Frog.mp3'),
     horse: new Audio('./src/sound/Horse.mp3'),
     cat: new Audio('./src/sound/Cat.mp3'),
-    cattle: new Audio('./src/sound/Cattle.mp3')
+    cattle: new Audio('./src/sound/Cattle.mp3'),
 
     // Urban Sounds
-
+    traffic: new Audio('./src/sound/Traffic.mp3'),
+    road: new Audio('./src/sound/Road.mp3'),
+    busystreet: new Audio('./src/sound/Busy-Street.mp3'),
+    mareket: new Audio('./src/sound/Market.mp3'),
+    gathering: new Audio('./src/sound/Gathering.mp3'),
+    park: new Audio('./src/sound/Park.mp3'),
 
     // Place Sounds
-
+    cafebar: new Audio('./src/sound/Cafe-Bar.mp3'),
+    temple: new Audio('./src/sound/Temple.mp3'),
+    church: new Audio('./src/sound/Church.mp3'),
+    construction: new Audio('./src/sound/Construction.mp3'),
+    village: new Audio('./src/sound/Village.mp3'),
+    farm: new Audio('./src/sound/Farm.mp3'),
+    office: new Audio('./src/sound/Office.mp3'),
 
     // Transport Sounds
-
+    airport: new Audio('./src/sound/Airport.mp3'),
+    trainstation: new Audio('./src/sound/Train-Station.mp3'),
+    airplane: new Audio('./src/sound/Airplane.mp3'),
+    train: new Audio('./src/sound/Train.mp3'),
+    boat: new Audio('./src/sound/Boat.mp3'),
+    car: new Audio('./src/sound/Car.mp3'),
     
     // Object Sounds
-
-
+    keyboard: new Audio('./src/sound/Keyboard.mp3'),
+    typewriter: new Audio('./src/sound/Typewriter.mp3'),
+    clock: new Audio('./src/sound/Clock.mp3'),
+    windchime: new Audio('./src/sound/Wind-Chime.mp3'),
+    spinningbowl: new Audio('./src/sound/Spinning-Bowl.mp3'),
+    fan: new Audio('./src/sound/Fan.mp3'),
+    bubble: new Audio('./src/sound/Bubble.mp3'),
+    shower: new Audio('./src/sound/Shower.mp3'),
+    radio: new Audio('./src/sound/Radio.mp3'),
+    book: new Audio('./src/sound/Book.mp3'),
+    waterdrop: new Audio('./src/sound/Water-Drop.mp3'),
+    
     // Noise Sounds
+    whitenoise: new Audio('./src/sound/White-Noise.mp3'),
+    pinknoise: new Audio('./src/sound/Pink-Noise.mp3'),
+    brownnoise: new Audio('./src/sound/Brown-Noise.mp3')
 };
 
 // Playlist sounds
