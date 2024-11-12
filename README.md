@@ -14,6 +14,7 @@ At Ambience, we believe in the transformative power of sound. Our curated collec
 
 - **Curated Sound Library**: Access a diverse range of high-quality ambient sounds, including nature, urban landscapes, and instrumental themes.
 - **Customizable Soundscapes**: Mix and layer sounds to create your unique background. Combine raindrops with soft jazz, or add gentle ocean waves to a coffee shop hum.
+- **Custom Playlist**: Premade playlist for your mood. hit a specific playlist as per your mood or occasion.
 - **Intuitive Card-Based Interface**: Each sound is represented as an interactive card, with active sounds highlighted in a distinct color for easy visibility.
 - **Seamless Volume Control**: Adjust volume sliders for each sound independently to customize your sound mix and find the perfect balance.
 - **Responsive Design**: Fully optimized for desktop and mobile, enabling you to create soundscapes on any device.
