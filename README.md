@@ -1,4 +1,5 @@
-<span style="color: #111111">
+<span style="background-color: #111111">
+ 
 # Ambient Music Webapp
 
 # Ambience 🎶 [![MyFiles Site Screenshot](files/logo/logo.svg)](https://github.com/TheRuchirShah/Ambience)
