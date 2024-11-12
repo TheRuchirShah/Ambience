@@ -1,7 +1,6 @@
 ## Ambient Music Webapp
 
 ### Ambience 🎶
-[![Ambience](files/logo/full_logo.svg)](https://github.com/TheRuchirShah/Ambience)
 
 Welcome to **Ambience** – your personal space for immersive background sounds designed to enhance focus, creativity, and relaxation. Our platform is crafted for those who seek tranquility and productivity through ambient soundscapes, whether you’re working, studying, or simply taking a moment to unwind.
 
