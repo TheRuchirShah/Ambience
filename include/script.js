@@ -36,7 +36,7 @@ const sounds = {
     traffic: new Audio('./src/sound/Traffic.mp3'),
     road: new Audio('./src/sound/Road.mp3'),
     busystreet: new Audio('./src/sound/Busy-Street.mp3'),
-    mareket: new Audio('./src/sound/Market.mp3'),
+    market: new Audio('./src/sound/Market.mp3'),
     gathering: new Audio('./src/sound/Gathering.mp3'),
     park: new Audio('./src/sound/Park.mp3'),
 
